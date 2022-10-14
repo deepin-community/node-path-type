@@ -1,0 +1,22 @@
+Source: node-path-type
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               node-pify <!nocheck>,
+               pkg-js-tools (>= 0.9.19~)
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-path-type
+Vcs-Git: https://salsa.debian.org/js-team/node-path-type.git
+Homepage: https://github.com/sindresorhus/path-type#readme
+Rules-Requires-Root: no
+
+Package: node-path-type
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs,
+         node-pify
+Description: check if a path is a file, directory, or symlink
+ Node.js is an event-based server-side JavaScript engine.
